@@ -5,20 +5,20 @@ try:
 except :
     from BeautifulSoup import BeautifulSoup 
 
-st.set_page_config(page_title="Deadlink Checker", page_icon=":tada:",layout="wide")
+st.set_page_config(page_title="Deadlink Checker", page_icon="🎉",layout="wide")
 
 
 #header
-st.subheader("Hi I am Romika! :partying_face:")
+st.subheader("Hi I am Romika! 🥳")
 st.write("A student from the University at Buffalo, pursuing my MS in AI :sign_of_the_horns:")
 st.write("This website checks for deadlinks upto five depths for each link found on the website you are trying to check.")
 st.write("This website was created using the tutorial [here](https://www.youtube.com/watch?v=VqgUkExPvLY&t=35s).")
-st.title("Dead Link Checker (Depth = 5)")
+st.title("Dead Link Checker (Depth = 3)")
 
 visited_links = set() 
 
 def check_links(url, depth=0):
-    if depth >= 5:
+    if depth >= 3:
         return
 
     if url in visited_links: 

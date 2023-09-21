@@ -5,7 +5,7 @@ try:
 except :
     from BeautifulSoup import BeautifulSoup 
 
-st.set_page_config(page_title="Deadlink Checker", page_icon="🌚",layout="wide")
+st.set_page_config(page_title="Deadlink Checker", page_icon=":sign_of_the_horns:",layout="wide")
 
 
 #header

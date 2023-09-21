@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
-from bs4 import BeautifulSoup
+try:
+    from bs4 import BeautifulSoup
+except :
+    from BeautifulSoup import BeautifulSoup 
 
 st.set_page_config(page_title="Deadlink Checker", page_icon=":tada:",layout="wide")
 

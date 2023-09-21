@@ -40,7 +40,12 @@ def check_links(url, depth=0):
 url = st.text_input("Enter URL to check for dead links:")
 
 if st.button("Check"):
-    check_links(url)
-    st.success("Link checking completed.")
+    if url:
+        visited_links.clear()
+        try:
+            check_links(url)
+            st.success("Link checking completed.")
+        except Exception as e:
+            st.error("An error occurred: " + str(e))
 else:
     st.warning("Please enter a valid URL.")

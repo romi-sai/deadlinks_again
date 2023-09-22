@@ -3,8 +3,12 @@ import requests
 try:
     from bs4 import BeautifulSoup
 except :
-    from BeautifulSoup import BeautifulSoup 
-from streamlit_option_menu import option_menu
+    from BeautifulSoup import BeautifulSoup
+
+try: 
+    from streamlit_option_menu import option_menu
+except:
+    from option_menu import option_menu
 
 st.set_page_config(page_title="Deadlink Checker", page_icon=":sign_of_the_horns:",layout="wide")
 

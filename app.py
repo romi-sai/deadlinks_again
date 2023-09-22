@@ -1,4 +1,4 @@
-kimport streamlit as st
+import streamlit as st
 import requests
 try:
     from bs4 import BeautifulSoup

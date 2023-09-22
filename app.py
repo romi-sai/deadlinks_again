@@ -1,4 +1,4 @@
-import streamlit as st
+kimport streamlit as st
 import requests
 try:
     from bs4 import BeautifulSoup
@@ -12,7 +12,7 @@ def streamlit_menu(example=1):
     if example == 1:
         selected = option_menu(
             menu_title=None,  # required
-            options=["Home", "Projects", "Contact"],  # required
+            options=["Home", "Check Links", "Contact"],  # required
             icons=["house", "book", "envelope"],  # optional
             menu_icon="cast",  # optional
             default_index=0,  # optional
